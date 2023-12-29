@@ -14,6 +14,8 @@ Gem::Specification.new do |s|
   s.add_dependency "rubocop-rails"
   s.add_dependency "rubocop-performance"
   s.add_dependency "rubocop-minitest"
+  s.add_dependency "rubocop-packaging"
+  s.add_dependency "rubocop-md"
 
   s.files = %w[ rubocop.yml ]
 end
