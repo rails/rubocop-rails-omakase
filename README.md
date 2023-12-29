@@ -14,7 +14,7 @@ First add this to your Gemfile, and run `bundle`:
 
 `gem "rubocop-rails-omakase", require: false, group: [ :development ]`
 
-Then add a default `.rubocup.yml` file in the root of your application with:
+Then add a default `.rubocop.yml` file in the root of your application with:
 
 ```
 # Omakase Ruby styling for Rails
