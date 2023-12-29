@@ -1,0 +1,247 @@
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-minitest
+
+inherit_mode:
+  merge:
+    - Exclude
+
+AllCops:
+  SuggestExtensions: false
+  DisabledByDefault: true
+  Exclude:
+    - "data/**/*"
+    - "db/*schema.rb"
+    - "log/**/*"
+    - "node_modules/**/*"
+    - "public/**/*"
+    - "storage/**/*"
+    - "tmp/**/*"
+    - "vendor/**/*"
+
+Performance:
+  Exclude:
+    - "test/**/*"
+
+# Prefer assert_not over assert !
+Rails/AssertNot:
+  Include:
+    - "test/**/*"
+
+# Prefer assert_not_x over refute_x
+Rails/RefuteMethods:
+  Include:
+    - "test/**/*"
+
+# We generally prefer &&/|| but like low-precedence and/or in context
+Style/AndOr:
+  Enabled: false
+
+# Align `when` with `end`.
+Layout/CaseIndentation:
+  Enabled: true
+  EnforcedStyle: end
+
+# Align comments with method definitions.
+Layout/CommentIndentation:
+  Enabled: true
+
+Layout/ElseAlignment:
+  Enabled: true
+
+# Align `end` with the matching keyword or starting expression except for
+# assignments, where it should be aligned with the LHS.
+Layout/EndAlignment:
+  Enabled: true
+  EnforcedStyleAlignWith: variable
+  AutoCorrect: true
+
+Layout/EmptyLineAfterMagicComment:
+  Enabled: true
+
+Layout/EmptyLinesAroundBlockBody:
+  Enabled: true
+
+# In a regular class definition, no empty lines around the body.
+Layout/EmptyLinesAroundClassBody:
+  Enabled: true
+
+# In a regular method definition, no empty lines around the body.
+Layout/EmptyLinesAroundMethodBody:
+  Enabled: true
+
+# In a regular module definition, no empty lines around the body.
+Layout/EmptyLinesAroundModuleBody:
+  Enabled: true
+
+# Use Ruby >= 1.9 syntax for hashes. Prefer { a: :b } over { :a => :b }.
+Style/HashSyntax:
+  Enabled: true
+  EnforcedShorthandSyntax: either
+
+# Method definitions after `private` or `protected` isolated calls need one
+# extra level of indentation.
+#
+# We break this rule in context, though, e.g. for private-only concerns,
+# so we leave it disabled.
+Layout/IndentationConsistency:
+  Enabled: false
+  EnforcedStyle: indented_internal_methods
+
+# Two spaces, no tabs (for indentation).
+#
+# Doesn't behave properly with private-only concerns, so it's disabled.
+Layout/IndentationWidth:
+  Enabled: false
+
+Layout/LeadingCommentSpace:
+  Enabled: true
+
+Layout/SpaceAfterColon:
+  Enabled: true
+
+Layout/SpaceAfterComma:
+  Enabled: true
+
+Layout/SpaceAroundEqualsInParameterDefault:
+  Enabled: true
+
+Layout/SpaceAroundKeyword:
+  Enabled: true
+
+Layout/SpaceBeforeComma:
+  Enabled: true
+
+Layout/SpaceBeforeFirstArg:
+  Enabled: true
+
+Style/DefWithParentheses:
+  Enabled: true
+
+# Defining a method with parameters needs parentheses.
+Style/MethodDefParentheses:
+  Enabled: true
+
+# Use `foo {}` not `foo{}`.
+Layout/SpaceBeforeBlockBraces:
+  Enabled: true
+
+# Use `->(x, y) { x + y }` not `-> (x, y) { x + y }`
+Layout/SpaceInLambdaLiteral:
+  Enabled: true
+
+Style/StabbyLambdaParentheses:
+  Enabled: true
+
+# Use `foo { bar }` not `foo {bar}`.
+# Use `foo { }` not `foo {}`.
+Layout/SpaceInsideBlockBraces:
+  Enabled: true
+  EnforcedStyleForEmptyBraces: space
+
+# Use `[ a, [ b, c ] ]` not `[a, [b, c]]`
+# Use `[]` not `[ ]`
+Layout/SpaceInsideArrayLiteralBrackets:
+  Enabled: true
+  EnforcedStyle: space
+  EnforcedStyleForEmptyBrackets: no_space
+
+# Use `%w[ a b ]` not `%w[ a   b ]`.
+Layout/SpaceInsideArrayPercentLiteral:
+  Enabled: true
+
+# Use `{ a: 1 }` not `{a:1}`.
+# Use `{}` not `{  }`.
+Layout/SpaceInsideHashLiteralBraces:
+  Enabled: true
+  EnforcedStyle: space
+  EnforcedStyleForEmptyBraces: no_space
+
+# Use `foo(bar)` not `foo( bar )`
+Layout/SpaceInsideParens:
+  Enabled: true
+
+# Requiring a space is not yet supported as of 0.59.2
+# Use `%w[ foo ]` not `%w[foo]`
+Layout/SpaceInsidePercentLiteralDelimiters:
+  Enabled: false
+  #EnforcedStyle: space
+
+# Use `hash[:key]` not `hash[ :key ]`
+Layout/SpaceInsideReferenceBrackets:
+  Enabled: true
+
+# Use `"foo"` not `'foo'` unless escaping is required
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+  Include:
+    - "app/**/*"
+    - "config/**/*"
+    - "lib/**/*"
+    - "test/**/*"
+    - "Gemfile"
+
+# Detect hard tabs, no hard tabs.
+Layout/IndentationStyle:
+  Enabled: true
+
+# Blank lines should not have any spaces.
+Layout/TrailingEmptyLines:
+  Enabled: true
+
+# No trailing whitespace.
+Layout/TrailingWhitespace:
+  Enabled: true
+
+# Use quotes for string literals when they are enough.
+Style/RedundantPercentQ:
+  Enabled: false
+
+# Use my_method(my_arg) not my_method( my_arg ) or my_method my_arg.
+Lint/RequireParentheses:
+  Enabled: true
+
+Lint/RedundantStringCoercion:
+  Enabled: true
+
+Lint/UriEscapeUnescape:
+  Enabled: true
+
+Style/ParenthesesAroundCondition:
+  Enabled: true
+
+Style/RedundantReturn:
+  Enabled: true
+  AllowMultipleReturnValues: true
+
+Style/Semicolon:
+  Enabled: true
+  AllowAsExpressionSeparator: true
+
+# Prefer Foo.method over Foo::method
+Style/ColonMethodCall:
+  Enabled: true
+
+Style/PercentLiteralDelimiters:
+  Enabled: true
+  PreferredDelimiters:
+    default: "()"
+    "%i": "[]"
+    "%I": "[]"
+    "%r": "{}"
+    "%w": "[]"
+    "%W": "[]"
+
+Style/TrailingCommaInArrayLiteral:
+  Enabled: true
+
+Style/TrailingCommaInHashLiteral:
+  Enabled: true
+
+Performance/FlatMap:
+  Enabled: true
+
+Performance/UnfreezeString:
+  Enabled: true
