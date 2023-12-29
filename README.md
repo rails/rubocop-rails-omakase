@@ -10,9 +10,11 @@ These specific rules aren't right or wrong, but merely represent the idiosyncrat
 
 This omakase style is automatically included with new Rails 8 applications. But if you're running an earlier version, you can easily add them yourself.
 
-First add this to your Gemfile, and run `bundle`:
+First add this to your Gemfile:
 
 `gem "rubocop-rails-omakase", require: false, group: [ :development ]`
+
+Then run `bundle`, then `bundle binstubs rubocop`.
 
 Then add a default `.rubocop.yml` file in the root of your application with:
 
@@ -23,7 +25,7 @@ inherit_gem: { rubocop-rails-omakase: rubocop.yml }
 # Your own specialized rules go here
 ```
 
-Now you can run `./bin/rubocop` to check for compliance. Then run `./bin/rubocop -a` to automatically fix violations.
+Now you can run `./bin/rubocop` to check for compliance and `./bin/rubocop -a` to automatically fix violations.
 
 
 ## Contributing
