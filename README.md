@@ -12,15 +12,18 @@ This omakase style is automatically included with new Rails 8 applications. But 
 
 First add this to your Gemfile:
 
-`gem "rubocop-rails-omakase", require: false, group: [ :development ]`
+```ruby
+gem "rubocop-rails-omakase", require: false, group: [ :development ]
+```
 
 Then run `bundle`, then `bundle binstubs rubocop`.
 
 Then add a default `.rubocop.yml` file in the root of your application with:
 
-```
+```yml
 # Omakase Ruby styling for Rails
-inherit_gem: { rubocop-rails-omakase: rubocop.yml }
+inherit_gem:
+  rubocop-rails-omakase: rubocop.yml
 
 # Your own specialized rules go here
 ```
@@ -37,4 +40,4 @@ The only type of contributions that will be considered is those pertaining to bu
 
 ## License
 
-This gem is released under the MIT License.
+This gem is released under the [MIT License](https://opensource.org/license/mit/).
