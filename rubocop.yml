@@ -12,13 +12,6 @@ AllCops:
   DisabledByDefault: true
   Exclude:
     - "data/**/*"
-    - "db/*schema.rb"
-    - "log/**/*"
-    - "node_modules/**/*"
-    - "public/**/*"
-    - "storage/**/*"
-    - "tmp/**/*"
-    - "vendor/**/*"
 
 Performance:
   Exclude:
