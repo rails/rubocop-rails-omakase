@@ -101,7 +101,7 @@ Layout/SpaceInLambdaLiteral:
 # Use `[ a, [ b, c ] ]` not `[a, [b, c]]`
 # Use `[]` not `[ ]`
 Layout/SpaceInsideArrayLiteralBrackets:
-  Enabled: true
+  Enabled: false
   EnforcedStyle: space
   EnforcedStyleForEmptyBrackets: no_space
 
@@ -238,6 +238,3 @@ Style/TrailingCommaInArrayLiteral:
 
 Style/TrailingCommaInHashLiteral:
   Enabled: true
-
-Layout/SpaceInsideArrayLiteralBrackets:
-  Enabled: false
