@@ -47,7 +47,7 @@ Layout/EmptyLinesAroundModuleBody:
 # assignments, where it should be aligned with the LHS.
 Layout/EndAlignment:
   Enabled: true
-  EnforcedStyleAlignWith: variable
+  EnforcedStyleAlignWith: keyword
   AutoCorrect: true
 
 # Method definitions after `private` or `protected` isolated calls need one
@@ -238,3 +238,6 @@ Style/TrailingCommaInArrayLiteral:
 
 Style/TrailingCommaInHashLiteral:
   Enabled: true
+
+Layout/SpaceInsideArrayLiteralBrackets:
+  Enabled: false
