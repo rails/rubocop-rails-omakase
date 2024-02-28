@@ -101,8 +101,8 @@ Layout/SpaceInLambdaLiteral:
 # Use `[ a, [ b, c ] ]` not `[a, [b, c]]`
 # Use `[]` not `[ ]`
 Layout/SpaceInsideArrayLiteralBrackets:
-  Enabled: false
-  EnforcedStyle: space
+  Enabled: true
+  EnforcedStyle: no_space
   EnforcedStyleForEmptyBrackets: no_space
 
 # Use `%w[ a b ]` not `%w[ a   b ]`.
