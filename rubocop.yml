@@ -144,6 +144,9 @@ Layout/TrailingEmptyLines:
 Layout/TrailingWhitespace:
   Enabled: true
 
+Lint/Debugger:
+  Enabled: true
+
 Lint/RedundantStringCoercion:
   Enabled: true
 
