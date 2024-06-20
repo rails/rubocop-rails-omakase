@@ -157,6 +157,7 @@ Lint/UriEscapeUnescape:
 Performance:
   Exclude:
     - "test/**/*"
+    - "spec/**/*"
 
 Performance/FlatMap:
   Enabled: true
@@ -168,11 +169,13 @@ Performance/UnfreezeString:
 Rails/AssertNot:
   Include:
     - "test/**/*"
+    - "spec/**/*"
 
 # Prefer assert_not_x over refute_x
 Rails/RefuteMethods:
   Include:
     - "test/**/*"
+    - "spec/**/*"
 
 # We generally prefer &&/|| but like low-precedence and/or in context
 Style/AndOr:
@@ -231,6 +234,7 @@ Style/StringLiterals:
     - "config/**/*"
     - "lib/**/*"
     - "test/**/*"
+    - "spec/**/*"
     - "Gemfile"
 
 Style/TrailingCommaInArrayLiteral:
