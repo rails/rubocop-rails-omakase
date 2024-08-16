@@ -8,7 +8,7 @@ These specific rules aren't right or wrong, but merely represent the idiosyncrat
 
 ## Installation
 
-This omakase style is automatically included with new Rails 8 applications. But if you're running an earlier version, you can easily add them yourself.
+This omakase style is automatically included with new Rails 7.2 applications. But if you're running an earlier version, you can easily add them yourself.
 
 First add this to your Gemfile:
 
