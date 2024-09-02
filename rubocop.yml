@@ -48,26 +48,10 @@ Layout/EmptyLinesAroundModuleBody:
 Layout/EndAlignment:
   Enabled: true
   EnforcedStyleAlignWith: variable
-  AutoCorrect: true
-
-# Method definitions after `private` or `protected` isolated calls need one
-# extra level of indentation.
-#
-# We break this rule in context, though, e.g. for private-only concerns,
-# so we leave it disabled.
-Layout/IndentationConsistency:
-  Enabled: false
-  EnforcedStyle: indented_internal_methods
 
 # Detect hard tabs, no hard tabs.
 Layout/IndentationStyle:
   Enabled: true
-
-# Two spaces, no tabs (for indentation).
-#
-# Doesn't behave properly with private-only concerns, so it's disabled.
-Layout/IndentationWidth:
-  Enabled: false
 
 Layout/LeadingCommentSpace:
   Enabled: true
@@ -103,7 +87,6 @@ Layout/SpaceInLambdaLiteral:
 Layout/SpaceInsideArrayLiteralBrackets:
   Enabled: true
   EnforcedStyle: space
-  EnforcedStyleForEmptyBrackets: no_space
 
 # Use `%w[ a b ]` not `%w[ a   b ]`.
 Layout/SpaceInsideArrayPercentLiteral:
@@ -119,18 +102,10 @@ Layout/SpaceInsideBlockBraces:
 # Use `{}` not `{  }`.
 Layout/SpaceInsideHashLiteralBraces:
   Enabled: true
-  EnforcedStyle: space
-  EnforcedStyleForEmptyBraces: no_space
 
 # Use `foo(bar)` not `foo( bar )`
 Layout/SpaceInsideParens:
   Enabled: true
-
-# Requiring a space is not yet supported as of 0.59.2
-# Use `%w[ foo ]` not `%w[foo]`
-Layout/SpaceInsidePercentLiteralDelimiters:
-  Enabled: false
-  #EnforcedStyle: space
 
 # Use `hash[:key]` not `hash[ :key ]`
 Layout/SpaceInsideReferenceBrackets:
@@ -164,20 +139,6 @@ Performance/FlatMap:
 Performance/UnfreezeString:
   Enabled: true
 
-# Prefer assert_not over assert !
-Rails/AssertNot:
-  Include:
-    - "test/**/*"
-
-# Prefer assert_not_x over refute_x
-Rails/RefuteMethods:
-  Include:
-    - "test/**/*"
-
-# We generally prefer &&/|| but like low-precedence and/or in context
-Style/AndOr:
-  Enabled: false
-
 # Prefer Foo.method over Foo::method
 Style/ColonMethodCall:
   Enabled: true
@@ -199,17 +160,6 @@ Style/ParenthesesAroundCondition:
 
 Style/PercentLiteralDelimiters:
   Enabled: true
-  PreferredDelimiters:
-    default: "()"
-    "%i": "[]"
-    "%I": "[]"
-    "%r": "{}"
-    "%w": "[]"
-    "%W": "[]"
-
-# Use quotes for string literals when they are enough.
-Style/RedundantPercentQ:
-  Enabled: false
 
 Style/RedundantReturn:
   Enabled: true
