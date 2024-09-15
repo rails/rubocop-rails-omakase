@@ -48,7 +48,6 @@ Layout/EmptyLinesAroundModuleBody:
 Layout/EndAlignment:
   Enabled: true
   EnforcedStyleAlignWith: variable
-  AutoCorrect: true
 
 # Method definitions after `private` or `protected` isolated calls need one
 # extra level of indentation.
