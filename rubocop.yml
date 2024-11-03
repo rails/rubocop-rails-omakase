@@ -160,9 +160,6 @@ Performance:
 Performance/FlatMap:
   Enabled: true
 
-Performance/UnfreezeString:
-  Enabled: true
-
 # Prefer assert_not over assert !
 Rails/AssertNot:
   Include:
