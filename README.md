@@ -2,7 +2,7 @@
 
 Ruby is a beautifully expressive language that not only tolerates many different dialects, but celebrates their diversity. It was never meant as a language to be written exclusively in a single style across all libraries, frameworks, or applications. If you or your team has developed a particular house style that brings you joy, you should cherish that.
 
-This collection of Rubocop styles is for those who haven't committed to any specific dialect already. Who would just like to have a reasonable starting point, and who will benefit from some default rules to at least start a consistent approach to Ruby styling.
+This collection of RuboCop styles is for those who haven't committed to any specific dialect already. Who would just like to have a reasonable starting point, and who will benefit from some default rules to at least start a consistent approach to Ruby styling.
 
 These specific rules aren't right or wrong, but merely represent the idiosyncratic aesthetic sensibilities of Rails' creator. Use them whole, use them as a starting point, use them as inspiration, or however you see fit.
 
