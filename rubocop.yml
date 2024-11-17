@@ -142,6 +142,10 @@ Layout/TrailingEmptyLines:
 Layout/TrailingWhitespace:
   Enabled: true
 
+# Remove redundant disable directives.
+Lint/RedundantCopDisableDirective:
+  Enabled: true
+
 Lint/RedundantStringCoercion:
   Enabled: true
 
