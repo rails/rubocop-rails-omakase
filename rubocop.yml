@@ -164,6 +164,11 @@ Rails/AssertNot:
   Include:
     - "test/**/*"
 
+Rails/EnumSyntax:
+  Enabled: true
+  Include:
+    - "app/models/**/*"
+
 # Prefer assert_not_x over refute_x
 Rails/RefuteMethods:
   Include:
