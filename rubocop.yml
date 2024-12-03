@@ -8,9 +8,32 @@ inherit_mode:
 
 AllCops:
   SuggestExtensions: false
-  DisabledByDefault: true
   Exclude:
     - "data/**/*"
+
+# All cops except your using extensions are disabled by default.
+Bundler:
+  Enabled: false
+Gemspec:
+  Enabled: false
+Layout:
+  Enabled: false
+Lint:
+  Enabled: false
+Metrics:
+  Enabled: false
+Naming:
+  Enabled: false
+Performance:
+  Enabled: false
+  Exclude:
+    - "test/**/*"
+Rails:
+  Enabled: false
+Security:
+  Enabled: false
+Style:
+  Enabled: false
 
 # Align `when` with `end`.
 Layout/CaseIndentation:
@@ -151,10 +174,6 @@ Lint/RequireParentheses:
 
 Lint/UriEscapeUnescape:
   Enabled: true
-
-Performance:
-  Exclude:
-    - "test/**/*"
 
 Performance/FlatMap:
   Enabled: true
