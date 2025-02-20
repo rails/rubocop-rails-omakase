@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.version = "1.0.0"
   s.platform = Gem::Platform::RUBY
 
-  s.add_dependency "rubocop"
+  s.add_dependency "rubocop", ">= 1.72"
   s.add_dependency "rubocop-rails"
   s.add_dependency "rubocop-performance"
 
