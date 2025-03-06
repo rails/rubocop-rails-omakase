@@ -28,6 +28,7 @@ Performance:
   Enabled: false
   Exclude:
     - "test/**/*"
+    - "spec/**/*"
 Rails:
   Enabled: false
 Security:
