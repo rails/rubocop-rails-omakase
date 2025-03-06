@@ -245,6 +245,7 @@ Style/StringLiterals:
     - "config/**/*"
     - "lib/**/*"
     - "test/**/*"
+    - "spec/**/*"
     - "Gemfile"
 
 Style/TrailingCommaInArrayLiteral:
