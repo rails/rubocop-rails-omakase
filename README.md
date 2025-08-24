@@ -37,7 +37,7 @@ Now you can run `./bin/rubocop` to check for compliance and `./bin/rubocop -a` t
 
 These omakase styles are not intended as an invitation to bikeshed code style preferences. If you disagree with some of the rules incorporated here, you should specialize them in your own application. If you disagree with most of the rules, you should just create your own style guide from scratch.
 
-The only type of contributions that will be considered is those pertaining to bugs or obvious inconsistencies that remain in the spirit of the omakase collection.
+The only type of contributions that will be considered are those pertaining to bugs or obvious inconsistencies that remain in the spirit of the omakase collection.
 
 
 ## License
