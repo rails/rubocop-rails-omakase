@@ -247,6 +247,9 @@ Style/StringLiterals:
     - "test/**/*"
     - "Gemfile"
 
+Style/TrailingCommaInArguments:
+  Enabled: true
+
 Style/TrailingCommaInArrayLiteral:
   Enabled: true
 
