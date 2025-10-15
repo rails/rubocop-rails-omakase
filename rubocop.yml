@@ -246,6 +246,7 @@ Style/StringLiterals:
     - "lib/**/*"
     - "test/**/*"
     - "Gemfile"
+    - "db/seeds.rb"
 
 Style/TrailingCommaInArguments:
   Enabled: true
