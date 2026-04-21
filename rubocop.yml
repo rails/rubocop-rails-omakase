@@ -50,3 +50,7 @@ Style/StringLiterals:
 
 Style/ClassAndModuleChildren:
   Enabled: false
+
+Rails/Output:
+  Exclude:
+    - 'db/seeds.rb'
